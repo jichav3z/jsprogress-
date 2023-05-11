@@ -27,10 +27,21 @@ const johnHeight = 1.95
 const markBMI = markMass / markHeight ** 2; 
 const johnBMI = johnMass / johnHeight ** 2; 
 //Testing if Mark has a higher BMI than John
-let markHigherBmi = markBMI > johnBMI; 
+if (markBMI > johnBMI) {
+    console.log(`Mark\'s BMI (${markBMI.toFixed(1)}) is higher than John\'s (${johnBMI.toFixed(1)})!`);
+} else if (johnBMI > markBMI) {
+    console.log(`John\'s BMI (${johnBMI.toFixed(1)}) is higher than Mark\'s (${markBMI.toFixed(1)})!`);
+} else {
+    console.log(`Mark\'s BMI (${markBMI.toFixed(1)}) is the same as John\'s (${johnBMI.toFixed(1)})!`);
+}
+
+
+
+
+
+/*
 //Logging the results
 console.log(markBMI, johnBMI, markHigherBmi);
-
 //This is the second data set   
 //Mark's Data
 const markMassTwo = 95;
@@ -45,3 +56,39 @@ const johnBMITwo = johnMassTwo / johnHeightTwo ** 2;
 let markHigherBmiTwo = markBMITwo > johnBMITwo;
 //Logging the results
 console.log(markBMITwo, johnBMITwo, markHigherBmiTwo);
+*/
+
+
+
+/*
+const firstName = 'Jared';
+
+const jaredNew = `I'm ${firstName}`;
+console.log(jaredNew);
+
+
+//write a program that checks whether a person is allowed to have a driver's license or not
+// and if they are it will print it to the console
+
+const age = 15;
+const isOldEnough = age >= 18; 
+
+if (isOldEnough) {
+    console.log('Sarah can start getting her driving license ');
+} else { 
+    const yearsLeft = 18 - age; 
+    console.log(`Sarah is too young. Wait another ${yearsLeft} years :)`)
+}
+
+const birthYear = 2012; 
+
+let century;
+
+if (birthYear <= 2000) {
+    century = 20;
+} else { 
+    century = 21;
+}
+console.log(century);
+*/
+
