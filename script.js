@@ -137,40 +137,56 @@ Test data:
 § Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
 § Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
 */ 
-// Average Score for Dolphins 
-const dolphinsAvgScore = (96 + 108 + 89) / 3; 
-const koalasAvgScore = (88 + 91 + 110) / 3; 
-//Score Calculation for Both Teams 
-if (dolphinsAvgScore > koalasAvgScore) { 
-    console.log(`Dolphins win with ${dolphinsAvgScore.toFixed(1)}!`)
-} else if (koalasAvgScore > dolphinsAvgScore) { 
-    console.log(`Koalas win with ${koalasAvgScore.toFixed(1)}!`)
-} else if (dolphinsAvgScore === koalasAvgScore) {
-    console.log('It\'s a draw!'); 
-} 
+// // Average Score for Dolphins 
+// const dolphinsAvgScore = (96 + 108 + 89) / 3; 
+// const koalasAvgScore = (88 + 91 + 110) / 3; 
+// //Score Calculation for Both Teams 
+// if (dolphinsAvgScore > koalasAvgScore) { 
+//     console.log(`Dolphins win with ${dolphinsAvgScore.toFixed(1)}!`)
+// } else if (koalasAvgScore > dolphinsAvgScore) { 
+//     console.log(`Koalas win with ${koalasAvgScore.toFixed(1)}!`)
+// } else if (dolphinsAvgScore === koalasAvgScore) {
+//     console.log('It\'s a draw!'); 
+// } 
 
-//Bonus 1 
-//Average Scores 
-const dolphinsAvgScoreBonus = (97 + 112 + 101) / 3;
-const koalasAvgScoreBonus = (109 + 95 + 123) / 3; 
-//Score Calculation for Both Teams
-if (dolphinsAvgScoreBonus > koalasAvgScoreBonus && dolphinsAvgScoreBonus >= 100) {
-    console.log(`Dolphins win with ${dolphinsAvgScoreBonus.toFixed(1)}!`)
-} else if (koalasAvgScoreBonus > dolphinsAvgScoreBonus && koalasAvgScoreBonus >= 100) {
-    console.log(`Koalas win with ${koalasAvgScoreBonus.toFixed(1)}`)
-} else if (dolphinsAvgScoreBonus === koalasAvgScoreBonus && dolphinsAvgScoreBonus >= 100 && koalasAvgScoreBonus >= 100) {
-    console.log('It\'s a draw!'); 
-}
+// //Bonus 1 
+// //Average Scores 
+// const dolphinsAvgScoreBonus = (97 + 112 + 101) / 3;
+// const koalasAvgScoreBonus = (109 + 95 + 123) / 3; 
+// //Score Calculation for Both Teams
+// if (dolphinsAvgScoreBonus > koalasAvgScoreBonus && dolphinsAvgScoreBonus >= 100) {
+//     console.log(`Dolphins win with ${dolphinsAvgScoreBonus.toFixed(1)}!`)
+// } else if (koalasAvgScoreBonus > dolphinsAvgScoreBonus && koalasAvgScoreBonus >= 100) {
+//     console.log(`Koalas win with ${koalasAvgScoreBonus.toFixed(1)}`)
+// } else if (dolphinsAvgScoreBonus === koalasAvgScoreBonus && dolphinsAvgScoreBonus >= 100 && koalasAvgScoreBonus >= 100) {
+//     console.log('It\'s a draw!'); 
+// }
 
-//Bonus 2 
-//Average Scores 
-const dolphinsAvgTwo = (97 + 112 + 101) / 3; 
-const koalasAvgTwo = (109 + 95 + 106) / 3;
-//Score Calculation for Both Teams
-if (dolphinsAvgTwo > koalasAvgTwo && dolphinsAvgTwo >= 100) {
-    console.log(`Dolphins win with ${dolphinsAvgTwo.toFixed(1)}!`)
-} else if (koalasAvgTwo > dolphinsAvgTwo && koalasAvgTwo >= 100) {
-    console.log(`Koalas win with ${koalasAvgTwo.toFixed(1)}`)
-} else if (dolphinsAvgTwo === koalasAvgTwo && dolphinsAvgTwo >= 100 && koalasAvgTwo >= 100) {
-    console.log('It\'s a draw!');
-}
+// //Bonus 2 
+// //Average Scores 
+// const dolphinsAvgTwo = (97 + 112 + 101) / 3; 
+// const koalasAvgTwo = (109 + 95 + 106) / 3;
+// //Score Calculation for Both Teams
+// if (dolphinsAvgTwo > koalasAvgTwo && dolphinsAvgTwo >= 100) {
+//     console.log(`Dolphins win with ${dolphinsAvgTwo.toFixed(1)}!`)
+// } else if (koalasAvgTwo > dolphinsAvgTwo && koalasAvgTwo >= 100) {
+//     console.log(`Koalas win with ${koalasAvgTwo.toFixed(1)}`)
+// } else if (dolphinsAvgTwo === koalasAvgTwo && dolphinsAvgTwo >= 100 && koalasAvgTwo >= 100) {
+//     console.log('It\'s a draw!');
+// }
+
+// const age = 23; 
+// age >= 18 ? console.log('I like to drink wine') : console.log('I like to drink water'); 
+
+//Tip Calculator for Three Bills 
+const billOne = 275; 
+const tipOne = billOne <= 300 && billOne >= 50 ? billOne * .15 : billOne * 0.2;
+console.log(`The bill was ${billOne}, the tip was ${tipOne.toFixed(2)}, and the total is ${billOne + tipOne}`); 
+
+const billTwo = 40; 
+const tipTwo = billTwo <= 300 && billTwo >= 50 ? billTwo * .15 : billTwo * 0.2;
+console.log(`The bill was ${billTwo}, the tip was ${tipTwo.toFixed(2)}, and the total is ${billTwo + tipTwo}`); 
+
+const billThree = 430; 
+const tipThree = billThree <= 300 && billThree >= 50 ? billThree * .15 : billThree * 0.2;
+console.log(`The bill was ${billThree}, the tip was ${tipThree.toFixed(2)}, and the total is ${billThree + tipThree}`); 
